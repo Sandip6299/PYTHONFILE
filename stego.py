@@ -1,6 +1,6 @@
 from PIL import Image
 
-# ---------------------------------- Encode Function -------------------------------------------------------------
+# ----------------------Encode Function ----------------------------------
 def encode_message(img_path, message, output_path):
     img = Image.open(img_path)
     img = img.convert("RGB")  # ensure RGB format
@@ -37,7 +37,7 @@ def encode_message(img_path, message, output_path):
     print(f"[+] Message encoded successfully into {output_path}")
 
 
-# ------------------------------------ Decode Function ----------------------------------------------------------
+# -------------------------------Decode Function ---------------------------------------------------
 def decode_message(img_path):
     img = Image.open(img_path)
     img = img.convert("RGB")
